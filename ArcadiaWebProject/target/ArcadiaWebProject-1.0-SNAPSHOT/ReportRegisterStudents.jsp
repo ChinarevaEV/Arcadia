@@ -1,10 +1,9 @@
-
 <html>
 <link href="CSS/style.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="favicons.png">
-<link href="CSS/bootstrap.min.css" rel="stylesheet" media="screen">
 
-  <link href="CSS/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<link href="CSS/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="CSS/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 <head>
     <title>Report Designer</title>
     <meta charset="utf-8">
@@ -72,12 +71,12 @@
                         <h5>Date1</h5>
                     </div>
                     <div  class="black">
-              <div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+              <div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                     <input size="16" type="text" name="report1_date_begin" id="report1_date_begin" value="" readonly>
                     <span class="add-on"><i class="icon-remove"></i></span>
 					<span class="add-on"><i class="icon-th"></i></span>
                 </div>
-				<input type="hidden" id="dtp_input2" value="" /><br/>
+
 				
                     </div>
 					
@@ -86,12 +85,12 @@
                         <h5>Date2</h5>
                     </div>
                     <div class="black">				
-					 <div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+					 <div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                     <input size="16" type="text"  name="report1_date_end" id="report1_date_end" value="" readonly>
                     <span class="add-on"><i class="icon-remove"></i></span>
 					<span class="add-on"><i class="icon-th"></i></span>
                 </div>
-				<input type="hidden" id="dtp_input2" value="" /><br/>
+
                      
                     </div>
                     <div>

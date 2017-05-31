@@ -1,6 +1,8 @@
 <html>
 <link href="CSS/style.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="favicons.png">
+<link href="CSS/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="CSS/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 <head>
     <title>Report Designer</title>
     <meta charset="utf-8">

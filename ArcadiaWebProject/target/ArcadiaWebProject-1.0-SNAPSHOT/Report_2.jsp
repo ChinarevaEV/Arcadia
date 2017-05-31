@@ -1,18 +1,21 @@
 <html>
-<link href="CSS/style.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="favicons.png">
 <link href="CSS/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="CSS/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicons.png">
+
 <head>
     <title>Report Designer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-   
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
 	
+	
+
 
 </head>
 <body>
@@ -31,7 +34,7 @@
             <a href="Report_5.jsp" class="btn btn-primary tablinks"> Courses Tests </a>
             <a href="Report_E.jsp" class="btn btn-primary tablinks"> Empty </a>
             <div class="btn-group">
-                <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"> More <span class="caret"></span> </button>
+                <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"> More <span class="caret"> </span> </button>
                 <!-- Выпадающее меню -->
                 <ul class="dropdown-menu">
                     <!-- Пункты меню -->
@@ -71,12 +74,12 @@
                 <div class="black">
                  
 				 
-				  <div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+				  <div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yyyy"  data-link-format="yyyy-mm-dd">
                     <input size="16" type="text"  name="report2_date_begin" id="report2_date_begin" value="" readonly>
                     <span class="add-on"><i class="icon-remove"></i></span>
 					<span class="add-on"><i class="icon-th"></i></span>
                 </div>
-				<input type="hidden" id="dtp_input2" value="" /><br/>
+
 				  
                 </div>
                 <div>
@@ -85,12 +88,12 @@
                 <div class="black">
 				
 				
-				<div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+				<div class="controls input-append date form_date" data-date="" data-date-format="dd.mm.yyyy"  data-link-format="yyyy-mm-dd">
                     <input size="16" type="text"  name="report2_date_end" id="report2_date_end" value="" readonly>
                     <span class="add-on"><i class="icon-remove"></i></span>
 					<span class="add-on"><i class="icon-th"></i></span>
                 </div>
-				<input type="hidden" id="dtp_input2" value="" /><br/>
+
                 
                 </div>
                   <!--    <div>
@@ -136,6 +139,7 @@
 <script type="text/javascript" src="js/date.js"></script>
 <script > 
 function dverify(){
+	
 if (dateVeryfy(document.getElementById("report2_date_begin").value,document.getElementById("report2_date_end").value)==1)
 {
 	document.getElementById("report2_form").action="http://localhost:8080/report_2";
@@ -144,12 +148,12 @@ if (dateVeryfy(document.getElementById("report2_date_begin").value,document.getE
 </script>
 
 <script > 
-					var now = new Date();
+    var now = new Date();
 					
-					document.getElementById("report2_date_begin").value=formatDate(now);
-					document.getElementById("report2_date_end").value=formatDate(now);
+    document.getElementById("report2_date_begin").value=formatDate(now);
+    document.getElementById("report2_date_end").value=formatDate(now);
 					
-				</script>
+</script>
 	
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" charset="UTF-8"></script>
 <script type="text/javascript" src="sample in bootstrap v2/bootstrap/js/bootstrap.min.js"></script>
